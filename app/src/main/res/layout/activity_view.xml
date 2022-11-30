@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CBFFF7"
+    tools:context=".ContactActivity">
+
+    <TextView
+        android:id="@+id/textFirstName"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="13dp"
+        android:text="Имя:"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textLastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textBirthdayDate"
+        android:layout_width="378dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="43dp"
+        android:text="День рождения:"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textPhoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/textLastName"
+        app:layout_constraintTop_toTopOf="@+id/textLastName" />
+
+    <TextView
+        android:id="@+id/textPhoneNumber"
+        android:layout_width="378dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="216dp"
+        android:text="Номер:"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/textBirthdayDate"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textLastName"
+        android:layout_width="379dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="60dp"
+        android:text="Фамилия"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textPhoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/textFirstName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#2CA3DD"
+        android:text="Назад"
+        android:textColor="#000000"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#42C525"
+        android:text="Редактировать"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#F66666"
+        android:text="Удалить"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonEdit"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/buttonBack"
+        app:layout_constraintTop_toTopOf="@+id/buttonBack" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
